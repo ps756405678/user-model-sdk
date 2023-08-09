@@ -30,7 +30,7 @@ func callModelFunc(httpReq *http.Request, req any, methodName string) (resp []by
 	if err != nil {
 		return
 	}
-	request, err := http.NewRequest("POST", "http://user-model-v1.default.local.com", bytes.NewReader(bData))
+	request, err := http.NewRequest("POST", "http://user-model-v1.default.scv.cluster.local", bytes.NewReader(bData))
 	if err != nil {
 		return
 	}
