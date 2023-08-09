@@ -36,3 +36,9 @@ type UserOrg struct {
 	UserId string `json:"user_id"`
 	OrgId  string `json:"org_id"`
 }
+
+type Result struct {
+	ErrCode    int    `json:"err_code"`
+	ErrMessage string `json:"err_message"`
+	Data       any    `json:"data"`
+}
