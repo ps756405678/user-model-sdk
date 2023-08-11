@@ -6,6 +6,9 @@ const (
 )
 
 const (
-	Register = "register"
-	Login    = "register"
+	Instantiate = "instantiate"
+	Update      = "update"
+	Delete      = "delete"
+	Register    = "register"
+	Login       = "login"
 )
