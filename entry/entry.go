@@ -110,6 +110,6 @@ func getModelFuncUrl(modelId string, methodName string) (url string, err error) 
 		return
 	}
 
-	url = result["data"].(string)
+	url = "http://" + result["data"].(string)
 	return
 }
