@@ -2,6 +2,12 @@ package domain
 
 import "time"
 
+type Register struct {
+	User     map[string]any `json:"user"`
+	RoleList []string       `json:"role_list"`
+	OrgList  []string       `json:"org_list"`
+}
+
 type User struct {
 	Id         string    `json:"_id"`
 	UserName   string    `json:"user_name"`
